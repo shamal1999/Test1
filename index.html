@@ -1,13 +1,143 @@
 <html>
-<title>
-First Webpage
-</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="test1.css">
+</head>
 <body>
-<h1>This is my first webpage</h1>
+
+
+<form Name="calc">
+
+    
+        <div id="textbox"><input type=text Name="display" size="43" style="height: 40px;"></div>
+ 
+        <div>
+		<input class="button button2" type=button value="1" OnClick="calc.display.value+='1'">
+        <input class="button button2" type=button value="2" OnClick="calc.display.value+='2'">
+        <input class="button button2" type=button value="3" OnClick="calc.display.value+='3'">
+        <input class="button button2" type=button value="+" OnClick="calc.display.value+='+'">
+		<div>
+    
+    
+        <div>
+		<input class="button button2" type=button value="4" OnClick="calc.display.value+='4'">
+        <input class="button button2" type=button value="5" OnClick="calc.display.value+='5'">
+        <input class="button button2" type=button value="6" OnClick="calc.display.value+='6'">
+        <input class="button button2" type=button value="-" OnClick="calc.display.value+='-'">
+		</div>
+     
+    
+        <div>
+		<input class="button button2" type=button value="7" OnClick="calc.display.value+='7'">
+        <input class="button button2" type=button value="8" OnClick="calc.display.value+='8'">
+        <input class="button button2" type=button value="9" OnClick="calc.display.value+='9'">
+        <input class="button button2" type=button value="x" OnClick="calc.display.value+='*'">
+		</div>
+    
+    
+        <div>
+		<input class="button button2" type=button value="0" OnClick="calc.display.value+='0'">
+        <input class="button button2" type=button value="C" OnClick="calc.display.value=''">
+        <input class="button button2" type=button value="=" OnClick="eval1();">
+        <input class="button button2" type=button value="/" OnClick="calc.display.value+='/'">
+		</div>
+    
+
+</form>
+
+	<script type="text/javascript">
+		function eval1(){
+			var x = document.getElementsByName('display')[0].value;
+			document.getElementsByName('display')[0].value = eval(x);	
+			return;
+		}
+		
+	</script>
 </body>
+</html>
 <style>
 body {
-background-color:green;
+    background-image: url("stars8.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
+	webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+div{
+    text-align:center;	
+	margin-top: 4px;
+}
+#textbox
+{
+	margin-top: 300px;
+}
+.button 
+{
+	background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 
+{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button1:hover 
+{
+    background-color: #4CAF50;
+    color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+.button4:hover {
+	background-color: #e7e7e7;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.button5:hover {
+    background-color: #555555;
+    color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 </style>
 </html>
